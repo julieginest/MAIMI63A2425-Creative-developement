@@ -1,13 +1,206 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
-    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+    <link rel="icon" type="image/svg+xml" href="public/FavIcon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>projet-disc</title>
   </head>
   <body>
-    <div id="app"></div>
-    <script type="module" src="/src/main.ts"></script>
+    <!-- header -->
+    <header>
+      <nav>
+        <div class="content">
+          <span><a href="#">Home</a></span>
+          <div class="flexH">
+            <ul>
+              <li><a href="#Generator">Generator</a></li>
+              <li><a href="#Albums">Albums</a></li>
+              <li><a href="#About">About</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <div class="hero">
+        <img src="public/Hero.png" alt="Beach house" />
+      </div>
+    </header>
+
+    <!-- main -->
+    <main>
+      <!-- Section 1 -->
+      <section class="Section1" id="Generator">
+        <div class="Generator">
+          <div class="Text">
+            <div class="TitleText">
+              <h2>Create your own cover</h2>
+              <h3>
+                For their new album, Beach House lets you choose the design
+              </h3>
+            </div>
+            <p>Unique & Limited edition</p>
+            <div class="flexH">
+              <button class="dark">generate</button>
+              <button class="light">download</button>
+            </div>
+          </div>
+          <div class="canva">
+            <img src="public/Blank_Cover.png" alt="" />
+            <canvas></canvas>
+          </div>
+        </div>
+        <p class="NewAlbumDesc">
+          New Album <span>“cherry house”</span> available soon
+        </p>
+      </section>
+
+      <hr />
+
+      <!-- Section 2 -->
+      <section class="Section2" id="Albums">
+        <div class="Title">
+          <h2>Albums</h2>
+        </div>
+        <div class="Albums">
+          <!--  -->
+          <div class="card">
+            <img src="public/Album_1.png" alt="album cover" />
+            <div class="Desc">
+              <h3>BLOOM CD</h3>
+              <p>May 15, 2012</p>
+            </div>
+            <div class="Price">
+              <p>€10,95</p>
+              <hr />
+            </div>
+            <button class="longDark">add to cart</button>
+          </div>
+          <!--  -->
+          <div class="card">
+            <img src="public/Album_2.png" alt="album cover" />
+            <div class="Desc">
+              <h3>Beach house CD</h3>
+              <p>October 3, 2006</p>
+            </div>
+            <div class="Price">
+              <p>€12,95</p>
+              <hr />
+            </div>
+            <button class="longDark">add to cart</button>
+          </div>
+          <!--  -->
+          <div class="card">
+            <img src="public/Album_3.png" alt="album cover" />
+            <div class="Desc">
+              <h3>Depression Cherry CD Flocked Edition</h3>
+              <p>August 28, 2015</p>
+            </div>
+            <div class="Price">
+              <p>€10,95</p>
+              <hr />
+            </div>
+            <button class="longDark">add to cart</button>
+          </div>
+          <!--  -->
+        </div>
+      </section>
+
+      <!-- Section 3 -->
+      <section class="Section3" id="About">
+        <div class="Title">
+          <h2>About</h2>
+        </div>
+        <div class="about">
+          <div class="aboutText">
+            <p>
+              Beach House is a dream pop duo from Baltimore, creating music
+              shaped by atmosphere, emotion, and patience.
+            </p>
+            <p>
+              their sound blends soft vocals, shimmering melodies, and hazy
+              textures, exploring themes of love, memory, and time.
+            </p>
+            <p class="bold">
+              “We make music meant to be felt slowly, inviting listeners to
+              drift, linger, and get lost.”
+            </p>
+          </div>
+          <div class="aboutImg">
+            <img src="public/Heart.svg" alt="" />
+          </div>
+        </div>
+        <!--  -->
+        <div class="photos">
+          <img src="public/Img_4.png" alt="bh concert photo" />
+          <img src="public/Img_BlckWth.png" alt="b&w bh photo" />
+          <img src="public/Img_2.png" alt="bh band photo" />
+        </div>
+      </section>
+    </main>
+
+    <!-- footer -->
+    <footer>
+      <div class="topSection">
+        <div class="left">
+          <h2 class="footerTitle">
+            Stay Updated & Get notified about exclusive content, merch, and
+            event drops
+          </h2>
+          <form action="post">
+            <input
+              name="submitted-name"
+              autocomplete="name"
+              value="Email address"
+              <input
+              type="submit"
+              value="Submit"
+            />
+            <input
+              type="image"
+              src="public/Arrow_Left.svg"
+              alt="Submit Email"
+            />
+            <hr />
+          </form>
+        </div>
+        <div class="middle">
+          <h2 class="footerTitle">Stalk us</h2>
+          <ul class="socials">
+            <li>
+              <a href="#"><img src="public/Deezer.svg" alt="Deezer icon" /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="public/Youtube.svg" alt="Youtube icon"
+              /></a>
+            </li>
+            <li>
+              <a href="#"
+                ><img src="public/Instagram.svg" alt="Instagram icon"
+              /></a>
+            </li>
+          </ul>
+        </div>
+        <div class="right">
+          <h2 class="footerTitle">Menu</h2>
+          <ul class="menu">
+            <li><a href="#Generator">Generator</a></li>
+            <li><a href="#Albums">Albums</a></li>
+            <li><a href="#About">About</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="bottomSection">
+        <h3>
+          © 2026,
+          <span
+            ><a href="https://shop.beachhousebaltimore.com/"
+              >BEACH HOUSE</a
+            ></span
+          >
+          Powered by Julie & ambre
+        </h3>
+      </div>
+    </footer>
   </body>
 </html>
