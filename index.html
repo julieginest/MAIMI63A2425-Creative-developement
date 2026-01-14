@@ -119,6 +119,7 @@
           <!--  -->
         </div>
       </section>
+      <hr />
 
       <!-- Section 3 -->
       <section class="Section3" id="About">
@@ -161,21 +162,20 @@
             Stay Updated & Get notified about exclusive content, merch, and
             event drops
           </h2>
-          <form action="post">
-            <input
-              name="submitted-name"
-              autocomplete="name"
-              value="Email address"
+          <form class="newsletter" method="post">
+            <label for="email" class="sr-only">Email address</label>
+            <div class="newsletter-field">
               <input
-              type="submit"
-              value="Submit"
-            />
-            <input
-              type="image"
-              src="public/Arrow_Left.svg"
-              alt="Submit Email"
-            />
-            <hr />
+                type="email"
+                id="email"
+                name="email"
+                placeholder="Email address"
+                required
+              />
+              <button type="submit" aria-label="Subscribe to newsletter">
+                <img src="public/Arrow_Left.svg" alt="" />
+              </button>
+            </div>
           </form>
         </div>
         <div class="middle">
