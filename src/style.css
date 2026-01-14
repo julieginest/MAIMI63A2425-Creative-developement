@@ -14,6 +14,21 @@
   --cherry-red: #5d0a0b;
   --dark-gold: #7d5613;
 }
+
+section {
+  width: 85%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 6rem 0;
+}
+
+hr {
+  width: 85%;
+  margin: 4rem auto;
+  border: none;
+  border-top: 1px solid #000;
+}
+
 input,
 button,
 textarea,
@@ -24,10 +39,7 @@ select {
 p,
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   overflow-wrap: break-word;
 }
 p {
@@ -35,11 +47,110 @@ p {
 }
 h1,
 h2,
-h3,
-h4,
-h5,
-h6 {
+h3 {
   text-wrap: balance;
 }
 
+h1,
+h2,
+h3 {
+  font-family: "Libre Bodoni", serif;
+  font-weight: 500;
+}
+
+h2 {
+  font-size: 2rem;
+  letter-spacing: 0.02em;
+}
+
+h3 {
+  font-size: 1.1rem;
+  font-weight: 400;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.6;
+}
+
+.bold {
+  font-weight: 600;
+  font-style: italic;
+}
+
+button {
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+}
+
+.dark {
+  background-color: black;
+  color: white;
+}
+.light {
+  background-color: white;
+  color: black;
+}
+
 /* Header */
+header {
+  margin: auto;
+}
+nav > div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+nav > div > span > a {
+  text-decoration: none;
+  color: black;
+  font-family: Playfair;
+  font-weight: 500;
+}
+
+ul,
+li {
+  margin: 0;
+  text-decoration: none;
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+}
+li > a {
+  text-decoration: none;
+  color: black;
+  font-family: Playfair;
+  font-weight: 500;
+}
+
+/* Main */
+/* ***** */
+
+/* Generator */
+.Section1 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.Generator {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 20px;
+  background-color: #e4d2d3;
+  padding: 20px;
+}
+
+.canva {
+  position: relative;
+}
+
+.canva canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
