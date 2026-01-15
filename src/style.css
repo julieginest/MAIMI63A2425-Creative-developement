@@ -197,7 +197,7 @@ canvas {
   position: absolute;
   top: 0;
   left: 0;
-  width: 100%;
+  width: 75%;
   height: 100%;
 }
 
@@ -411,4 +411,217 @@ footer a {
 .bottomSection h3 {
   font-size: 0.7rem;
   font-weight: 400;
+}
+
+/* Responsive */
+
+/* Tablet breakpoint (768px and below) */
+@media (max-width: 768px) {
+  section {
+    width: 90%;
+    padding: 4rem 0;
+  }
+
+  nav {
+    padding: 1.5rem 2rem;
+  }
+
+  nav ul {
+    gap: 1rem;
+    font-size: 0.75rem;
+  }
+
+  .Generator {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .Text {
+    max-width: 100%;
+    text-align: center;
+  }
+
+  .TitleText h2 {
+    font-size: 1.8rem;
+  }
+
+  .flexH {
+    justify-content: center;
+  }
+
+  .canva {
+    width: 100%;
+    max-width: 280px;
+  }
+
+  .Albums {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2rem;
+  }
+
+  .about {
+    flex-direction: column;
+    gap: 2rem;
+  }
+
+  .aboutImg img {
+    width: 80px;
+  }
+
+  .photos {
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .topSection {
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  .topSection .middle {
+    grid-column: 1 / -1;
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
+  .topSection .right {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+}
+
+/* Mobile breakpoint (480px and below) */
+@media (max-width: 480px) {
+  section {
+    width: 95%;
+    padding: 2rem 0;
+  }
+
+  nav {
+    padding: 1rem 1.5rem;
+  }
+
+  nav .content {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  nav ul {
+    gap: 0.75rem;
+    font-size: 0.7rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  .TitleText h2 {
+    font-size: 1.5rem;
+  }
+
+  .TitleText h3 {
+    font-size: 0.9rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
+
+  .flexH {
+    flex-direction: column;
+    gap: 0.75rem;
+  }
+
+  button {
+    padding: 0.6rem 1.5rem;
+    font-size: 0.75rem;
+  }
+
+  .longDark {
+    padding: 0.7rem 0;
+  }
+
+  .canva {
+    width: 100%;
+    max-width: 250px;
+  }
+
+  .Albums {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .card img {
+    margin-bottom: 1rem;
+  }
+
+  .about {
+    gap: 1.5rem;
+  }
+
+  .aboutImg {
+    text-align: center;
+  }
+
+  .aboutImg img {
+    width: 60px;
+  }
+
+  .photos {
+    grid-template-columns: 1fr;
+    margin-top: 3rem;
+  }
+
+  .topSection {
+    grid-template-columns: 1fr;
+    padding: 2rem 0;
+    gap: 2rem;
+  }
+
+  .topSection .middle,
+  .topSection .right {
+    border-left: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
+    padding-left: 0;
+    padding-top: 2rem;
+  }
+
+  .footerTitle {
+    font-size: 1.1rem;
+  }
+
+  footer p,
+  footer a {
+    font-size: 0.7rem;
+  }
+
+  .newsletter-field {
+    flex-direction: column;
+    gap: 0.5rem;
+    align-items: flex-start;
+    border-bottom: none;
+    border-top: 1px solid rgba(255, 255, 255, 0.6);
+    padding-bottom: 0;
+    padding-top: 0.5rem;
+  }
+
+  .newsletter input {
+    width: 100%;
+    padding: 0.5rem 0;
+  }
+
+  .newsletter button {
+    padding-left: 0;
+  }
+
+  .socials {
+    gap: 0.75rem;
+  }
+
+  .socials img {
+    width: 16px;
+  }
 }
