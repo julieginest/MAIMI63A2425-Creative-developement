@@ -19,7 +19,6 @@ section {
   width: 85%;
   max-width: 1200px;
   margin: 0 auto;
-  padding: 6rem 0;
 }
 
 hr {
@@ -93,9 +92,7 @@ button {
   color: black;
 }
 
-/* =====================
-   HEADER & NAV
-===================== */
+/* Nav & header */
 
 header {
   width: 100%;
@@ -124,9 +121,7 @@ nav ul {
   gap: 2rem;
 }
 
-/* =====================
-   HERO
-===================== */
+/* Hero */
 
 .hero {
   width: 100%;
@@ -148,7 +143,7 @@ nav ul {
 
 .Generator {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   gap: 4rem;
 }
@@ -188,15 +183,22 @@ button {
 
 .canva {
   position: relative;
+  width: 320px;
+  height: auto;
 }
 
 .canva img {
-  width: 320px;
+  width: 100%;
+  height: auto;
+  display: block;
 }
 
 canvas {
   position: absolute;
-  inset: 0;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
 }
 
 /* New album text */
@@ -271,7 +273,7 @@ canvas {
 
 .about {
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: flex-start;
   gap: 4rem;
 }
@@ -293,13 +295,19 @@ canvas {
 .photos {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
+  width: 100vw;
+  margin-left: calc(-50vw + 50%);
   margin-top: 5rem;
+  margin-bottom: 0;
+  padding: 0;
 }
 
 .photos img {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  margin: 0;
+  padding: 0;
 }
 
 /* Footer */
@@ -307,7 +315,6 @@ canvas {
 footer {
   background-color: #7b0f12;
   color: #fff;
-  margin-top: 6rem;
   border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
@@ -338,18 +345,6 @@ footer a {
   font-size: 0.75rem;
   color: #fff;
   text-decoration: none;
-}
-
-.sr-only {
-  position: absolute;
-  width: 1px;
-  height: 1px;
-  padding: 0;
-  margin: -1px;
-  overflow: hidden;
-  clip: rect(0, 0, 0, 0);
-  white-space: nowrap;
-  border: 0;
 }
 
 /* Newsletter form */
