@@ -5,6 +5,7 @@
     <link rel="icon" type="image/svg+xml" href="public/FavIcon.png" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="src/style.css" />
+    <link rel="stylesheet" href="src/canvas.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
@@ -19,6 +20,7 @@
     <title>Beach House - Dream Pop Duo</title>
   </head>
   <body>
+    <img src="/tape.png" alt="canvasImageSource" id="canvasImageSource" style="display:none;">
     <!-- Header -->
     <header>
       <nav>
@@ -56,14 +58,28 @@
               </h3>
             </div>
             <p>Unique & Limited edition</p>
-            <div class="flexH">
-              <button class="dark">generate</button>
-              <button class="light">download</button>
+            <div id="colorSelector">
+              <div class="colorSelect" id="colorSelect0" value="0" style="height: 50px; width:50px; background:#CEC075">
+                <span class="Selected" id="Selected1">1</span>
+              </div>
+              <div class="colorSelect" id="colorSelect1" value="1" style="height: 50px; width:50px; background:#C63849">
+                <span class="Selected" id="Selected2">2</span>
+              </div>
+              <div class="colorSelect" id="colorSelect2" value="2" style="height: 50px; width:50px; background:#B0B0B0"></div>
+              <div class="colorSelect" id="colorSelect3" value="3" style="height: 50px; width:50px; background:#7D5613"></div>
+              <div class="colorSelect" id="colorSelect4" value="4" style="height: 50px; width:50px; background:#5D0A0B"></div>
             </div>
           </div>
-          <div class="canva">
-            <img src="public/Blank_Cover.png" alt="Cover template" />
-            <canvas></canvas>
+          <div class="canva" >
+            <div class="main" id="canvasBox">
+              <!-- child div -->
+              <!-- <input type="range" min="-60" max="60" value="0" default="0" class="slider" id="myRange"> -->
+              <div class="box">
+                <canvas id="canvas" class="canvas">
+                </canvas>
+                <!-- <img src="" alt="canvasDamier" id="canvas" class="canvas"> -->
+              <canvas id="canvas2" class="canvas">
+              </canvas>
           </div>
         </div>
         <p class="NewAlbumDesc">
@@ -254,5 +270,6 @@
     <script>
       AOS.init();
     </script>
+    <script type="module" src="/src/Canvas/TD.ts"></script>
   </body>
 </html>
