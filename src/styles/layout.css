@@ -245,6 +245,7 @@ footer {
   font-family: "Libre Bodoni", serif;
   font-size: 1.4rem;
   margin-bottom: 1.5rem;
+  font-weight: 700;
 }
 
 footer p,
@@ -292,14 +293,10 @@ footer a {
   width: 16px;
 }
 
-.menu {
+.socials {
   list-style: none;
-  margin: 0;
-  padding: 0;
-}
-
-.menu li {
-  margi2rem;
+  display: flex;
+  gap: 2rem;
   justify-content: center;
   margin: 0;
   padding: 0;
@@ -313,11 +310,27 @@ footer a {
 .socials a {
   display: flex;
   align-items: center;
+  color: #fff;
+  text-decoration: none;
 }
 
 .socials img {
   width: 24px;
-  height: 24ff;
+  height: 24px;
+}
+
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu li {
+  margin-bottom: 0.75rem;
+}
+
+.menu a {
+  color: #fff;
   text-decoration: none;
   font-size: 0.75rem;
 }
@@ -326,22 +339,16 @@ footer a {
   text-decoration: underline;
 }
 
-.socials {
-  display: flex;
-  gap: 1rem;
-}
-
-.socials img {
-  width: 20px;
-}
-
 .bottomSection {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   text-align: center;
   padding: 1.5rem 0;
+  width: 85%;
+  margin: 0 auto;
 }
 
 .bottomSection h3 {
   font-size: 0.7rem;
   font-weight: 400;
+  margin: 0;
 }
