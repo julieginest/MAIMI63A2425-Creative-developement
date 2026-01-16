@@ -20,7 +20,7 @@ header {
 
 nav {
   width: 100%;
-  padding: 2rem 4rem;
+  padding: 2rem 8rem;
 }
 
 nav .content {
@@ -32,7 +32,7 @@ nav .content {
 nav a {
   text-decoration: none;
   color: #000;
-  font-size: 0.85rem;
+  font-size: 1.1rem;
 }
 
 nav ul {
@@ -47,7 +47,7 @@ nav ul {
   width: 100%;
   display: flex;
   justify-content: center;
-  padding: 4rem 0 6rem;
+  padding: 3rem 6rem 5rem 6rem;
 }
 
 .hero img {
@@ -147,6 +147,7 @@ canvas {
 
 .Price {
   margin: 1.5rem 0;
+  border-bottom: 1px solid black;
 }
 
 .Price p {
@@ -166,6 +167,10 @@ canvas {
 }
 
 /* Section 3 */
+
+.Section3 {
+  padding-bottom: 0;
+}
 
 .Section3 .Title {
   margin-bottom: 4rem;
@@ -221,9 +226,8 @@ footer {
 .topSection {
   width: 85%;
   margin: 0 auto;
-  padding: 4rem 0;
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-columns: 2fr 1fr 1fr;
   gap: 3rem;
 }
 
@@ -235,11 +239,26 @@ footer {
   text-align: center;
   border-left: 1px solid rgba(255, 255, 255, 0.4);
   border-right: 1px solid rgba(255, 255, 255, 0.4);
-  padding: 0 2.5rem;
 }
 
-.topSection .right {
-  text-align: right;
+.topSection .right-wrapper {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+}
+
+.topSection > div {
+  padding: 4rem 2rem;
+}
+
+.right {
+  width: fit-content;
+  text-align: left;
+}
+
+li {
+  font-family: Quicksand;
+  font-weight: 300;
 }
 
 .footerTitle {
@@ -285,9 +304,9 @@ footer a {
   background: none;
   border: none;
   cursor: pointer;
-  padding-left: 1rem;
   display: flex;
   align-items: center;
+  padding: 0;
 }
 
 .newsletter button img {
@@ -344,8 +363,6 @@ footer a {
   border-top: 1px solid rgba(255, 255, 255, 0.4);
   text-align: center;
   padding: 1.5rem 0;
-  width: 85%;
-  margin: 0 auto;
 }
 
 .bottomSection h3 {
