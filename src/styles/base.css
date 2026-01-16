@@ -79,11 +79,23 @@ button {
 .dark {
   background-color: black;
   color: white;
+  transition-duration: 200ms;
+}
+
+.dark:hover {
+  background-color: #4a4a4a;
 }
 
 .light {
   background-color: white;
   color: black;
+  transition-duration: 200ms;
+}
+
+.light:hover {
+  background-color: var(--cherry-red);
+  color: white;
+  border: none;
 }
 
 hr {
