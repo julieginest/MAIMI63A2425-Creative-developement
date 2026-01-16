@@ -55,8 +55,8 @@ export class CanvasBox{
 
     // this.changeDirection()
 
-    const xPos = (e.pageX - this.element.offsetLeft) - (this.element.offsetWidth/2)-594+185
-    const yPos = (e.pageY - this.element.offsetTop) - (this.element.offsetHeight/2)-594+185
+    const xPos = (e.pageX - this.element.offsetLeft) - (this.element.offsetWidth/2)//-594+185
+    const yPos = (e.pageY - this.element.offsetTop) - (this.element.offsetHeight/2)//-594+185
     console.log("xPos: "+xPos+"\nyPos: "+yPos+"\nxR: "+this.xRotationDirection+"\nyR: "+this.yRotationDirection)
     
     this.xRotationDirection = (15*xPos)/(this.element.offsetWidth/2)
