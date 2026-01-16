@@ -18,6 +18,8 @@ We decided to focus on the core of Beach House's artistic direction : Something 
 
 ![stylescape img](public/StyleScape_BeachHouse.png)
 *stylescape*
+![Landing maquette](public/Landing_Desktop.png)
+*maquette*
 
 # Prerequisites 
 Our project is made using *vite*, *typescript* and basic *css*.
