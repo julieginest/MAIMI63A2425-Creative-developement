@@ -7,6 +7,7 @@
     <link rel="stylesheet" href="src/style.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet" />
     <link
       href="https://fonts.googleapis.com/css2?family=Libre+Bodoni:ital,wght@0,400..700;1,400..700&family=Manrope:wght@200..800&family=Playfair:ital,opsz,wght@0,5..1200,300..900;1,5..1200,300..900&family=Quicksand:wght@300..700&display=swap"
       rel="stylesheet"
@@ -40,7 +41,12 @@
     <!-- Main Content -->
     <main>
       <!-- Section 1: Generator -->
-      <section class="Section1" id="Generator">
+      <section
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        class="Section1"
+        id="Generator"
+      >
         <div class="Generator">
           <div class="Text">
             <div class="TitleText">
@@ -69,11 +75,16 @@
 
       <!-- Section 2: Albums -->
       <section class="Section2" id="Albums">
-        <div class="Title">
+        <div data-aos="fade-up" data-aos-duration="1000" class="Title">
           <h2>Albums</h2>
         </div>
         <div class="Albums">
-          <div class="card">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            class="card"
+          >
             <img src="public/Album_1.png" alt="BLOOM CD album cover" />
             <div class="Desc">
               <h3>BLOOM CD</h3>
@@ -85,7 +96,12 @@
             <button class="longDark">add to cart</button>
           </div>
           <!--  -->
-          <div class="card">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="800"
+            class="card"
+          >
             <img src="public/Album_2.png" alt="album cover" />
             <div class="Desc">
               <h3>Beach house CD</h3>
@@ -97,7 +113,12 @@
             <button class="longDark">add to cart</button>
           </div>
           <!--  -->
-          <div class="card">
+          <div
+            data-aos="fade-up"
+            data-aos-duration="1000"
+            data-aos-delay="1100"
+            class="card"
+          >
             <img src="public/Album_3.png" alt="album cover" />
             <div class="Desc">
               <h3>Depression Cherry CD Flocked Edition</h3>
@@ -115,11 +136,11 @@
 
       <!-- Section 3: About -->
       <section class="Section3" id="About">
-        <div class="Title">
+        <div data-aos="fade-up" data-aos-duration="1000" class="Title">
           <h2>About</h2>
         </div>
         <div class="about">
-          <div class="aboutText">
+          <div data-aos="fade-up" data-aos-duration="1000" class="aboutText">
             <p>
               Beach House is a dream pop duo from Baltimore, creating music
               shaped by atmosphere, emotion, and patience.
@@ -133,7 +154,12 @@
               drift, linger, and get lost.”
             </p>
           </div>
-          <div class="aboutImg">
+          <div
+            data-aos="fade-left"
+            data-aos-duration="1000"
+            data-aos-delay="500"
+            class="aboutImg"
+          >
             <img src="public/Heart.svg" alt="" />
           </div>
         </div>
@@ -224,5 +250,9 @@
     </footer>
 
     <script type="module" src="src/main.ts"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init();
+    </script>
   </body>
 </html>
