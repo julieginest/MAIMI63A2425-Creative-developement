@@ -23,3 +23,11 @@ We decided to focus on the core of Beach House's artistic direction : Something 
 
 # Prerequisites 
 Our project is made using *vite*, *typescript* and basic *css*.
+
+To launch the project, use :
+```
+npm i
+npm run dev
+```
+***NB***:each timme you refresh, the cover changes ! 
+
